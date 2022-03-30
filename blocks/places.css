@@ -1,121 +1,116 @@
 .places {
-    color: #fff;
-    line-height: 29px ;
-    max-width: 100%;
+  color: #fff;
+  line-height: 29px;
+  max-width: 100%;
 }
 .place {
   display: grid;
   gap: 48px 40px;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-columns: 460px 1fr;
-  padding-top:80px;
+  padding-top: 80px;
   grid-template-areas:
-  "title artist"
-  "image article"
-  "button article";
+    "title artist"
+    "image article"
+    "button article";
 }
-.place:first-of-type{
-    padding-top: 92px;
+.place:first-of-type {
+  padding-top: 92px;
 }
-.place:last-of-type{
-    padding-bottom: 92px;
+.place:last-of-type {
+  padding-bottom: 92px;
 }
 .place__title {
-    margin: 0;
-    font-weight: bold;
-    font-size: 72px;
-    line-height: 1.06;
-    grid-area: title;
-    max-width: 480px;
-    text-align: left;
-    grid-area: title;
+  margin: 0;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 1.06;
+  grid-area: title;
+  max-width: 480px;
+  text-align: left;
+  grid-area: title;
 }
 
 .place__website {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    grid-area: artist;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  grid-area: artist;
 }
 
 .place__url-heading {
-    font-size: 12px;
-    grid-area: website;
-    color: #AAAAAA;
-    line-height: 15px;
-    letter-spacing: 0.12em;
-    padding-bottom: 8px;
+  font-size: 12px;
+  grid-area: website;
+  color: #aaaaaa;
+  line-height: 15px;
+  letter-spacing: 0.12em;
+  padding-bottom: 8px;
 }
 
 .place__artist {
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    
+  margin: 0;
+  list-style: none;
+  padding: 0;
 }
 .place__image {
-max-width: 460px;
-max-height: 460px;
-grid-area : image;
+  max-width: 460px;
+  max-height: 460px;
+  grid-area: image;
 }
 
 .place__article {
-    grid-area: article;
+  grid-area: article;
 }
 .place__paragraph {
-    margin: 0;
-    padding-bottom: 25px;
-  
+  margin: 0;
+  padding-bottom: 25px;
 }
-.place__paragraph:last-of-type{
-    padding: 0;
+.place__paragraph:last-of-type {
+  padding: 0;
 }
 .place__button {
-    border-radius: 4px;
-    border: none;
-    background: #2f80ed;
-    color: #fff;
-    min-width: 248px;
-    max-width: 288px;
-    height: 48px;
-    max-height: 48px;
-    padding: 0;
-    font-weight: 500;
-    transition: background-color 0.5s ease;
-    grid-area: button;
-  }
-  
-  .place__button:hover {
-    background-color: #0063D2;
-  }
+  border-radius: 4px;
+  border: none;
+  background: #2f80ed;
+  color: #fff;
+  min-width: 248px;
+  max-width: 288px;
+  height: 48px;
+  max-height: 48px;
+  padding: 0;
+  font-weight: 500;
+  transition: background-color 0.5s ease;
+  grid-area: button;
+}
 
+.place__button:hover {
+  background-color: #0063d2;
+}
 
-  @media screen and (max-width: 321px) {
-      .places {
+@media screen and (max-width: 321px) {
+  .places {
     max-width: 320;
-      }
-    .place {
-        max-width: 100%;
-        grid-template-columns:auto;
-        grid-template-columns: repeat(4 , 1fr);
-        grid-template-areas:
-        "title"
-        "artist"
-        "image"
-        "article"
-        "button";
-        max-width: 100%;
-    }
-    .place__paragraph {
-        max-width: 288px;
-
-    }
   }
-
-  @media screen and (max-width: 769px) {
-    .places {
-        max-width: 768px;
-        font-size: 16px;
+  .place {
+    max-width: 100%;
+    grid-template-columns: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "article"
+      "button";
+    max-width: 100%;
   }
+  .place__paragraph {
+    max-width: 288px;
+  }
+}
 
+@media screen and (max-width: 769px) {
+  .places {
+    max-width: 768px;
+    font-size: 16px;
+  }
 }

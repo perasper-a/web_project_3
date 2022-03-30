@@ -1,15 +1,14 @@
 .page {
-    font-family: 'Inter', Arial, sans-serif ;
-    max-width: 1280px;
-    max-width: 1280px;
+  font-family: "Inter", Arial, sans-serif;
+  max-width: 1280px;
+  max-width: 1280px;
   background-position: center;
   margin: 0 auto;
   height: 100%;
-   font-size: 18px;
-   background-color: #2A2C2F;
-   font-style: normal;
+  font-size: 18px;
+  background-color: #2a2c2f;
+  font-style: normal;
   font-weight: 400;
-
 }
 
 .page__container {
@@ -19,7 +18,7 @@
 }
 
 @media screen and (max-width: 769px) {
-  .page{
-  max-width: 768px;
+  .page {
+    max-width: 768px;
   }
 }
