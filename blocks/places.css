@@ -28,7 +28,6 @@
   grid-area: title;
   max-width: 480px;
   text-align: left;
-  grid-area: title;
 }
 
 .place__website {
@@ -101,7 +100,6 @@
       "image"
       "article"
       "button";
-    max-width: 100%;
   }
   .place__paragraph {
     max-width: 288px;
