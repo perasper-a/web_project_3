@@ -28,13 +28,6 @@
   opacity: 0.8;
 }
 
-.cover__content {
-  display: flex;
-  flex-direction: column;
-  max-width: 656px;
-  margin: auto;
-  z-index: 1;
-}
 .cover__title {
   font-weight: bold;
   font-size: 72px;
@@ -44,8 +37,15 @@
   text-align: center;
   z-index: 2;
 }
+
+.cover__content {
+  display: flex;
+  flex-direction: column;
+  max-width: 656px;
+  margin: auto;
+  z-index: 1;
+}
 .cover__paragraph {
-  font-size: 18px;
   line-height: 1.22;
   margin: 0;
   padding: 32px 0 32px 0;
