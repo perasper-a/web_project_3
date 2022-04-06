@@ -32,7 +32,6 @@
   font-weight: bold;
   font-size: 72px;
   line-height: 1.06;
-  max-width: 656px;
   margin: auto;
   text-align: center;
   z-index: 2;
@@ -41,7 +40,6 @@
 .cover__content {
   display: flex;
   flex-direction: column;
-  max-width: 656px;
   margin: auto;
   z-index: 1;
 }
@@ -89,7 +87,8 @@
     max-height: 254px;
   }
   .cover__title {
-    max-width: 288px;
+    padding-left: 56px;
+    padding-right: 56px;
     font-size: 32px;
     line-height: 1.09;
   }

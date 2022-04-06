@@ -8,7 +8,8 @@
   gap: 48px 40px;
   grid-template-columns: 1fr 1fr;
   grid-template-columns: 460px 1fr;
-  padding-top: 80px;
+  padding: 80px 148px 0 148px;
+  max-width: 984px;
   grid-template-areas:
     "title artist"
     "image article"
@@ -67,7 +68,7 @@
 .place__paragraph:last-of-type {
   padding: 0;
 }
-.place__content_button {
+.place__button {
   display: flex;
   justify-content: center;
   align-items: center;

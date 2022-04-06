@@ -4,8 +4,9 @@
   max-width: 1184px;
   max-height: 442px;
   grid-template-columns: repeat(4, auto);
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(auto-fit, minmax(280px, 1fr));
   margin: auto;
+  padding: 0 48px;
 }
 
 .photo-grid__item {
@@ -17,7 +18,7 @@
     max-width: 768px;
     grid-gap: 12px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, 352px);
+    grid-template-rows: repeat(auto-fit, minmax(380px, 1fr));
     margin: auto;
   }
   .photo-grid__item {
@@ -31,7 +32,7 @@
       max-width: 320px;
       grid-gap: 12px;
       grid-template-columns: auto;
-      grid-template-rows: repeat(8, 288px);
+      grid-template-rows: repeat(auto-fit, minmax(280px, 1fr));
       margin: auto;
     }
     .photo-grid__item {
