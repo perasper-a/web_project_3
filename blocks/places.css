@@ -2,11 +2,12 @@
   color: #fff;
   line-height: 29px;
   max-width: 100%;
+  padding-top: 92px;
 }
 .place {
   display: grid;
   gap: 48px 40px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 1fr;
   grid-template-columns: 460px 1fr;
   padding: 80px 148px 0 148px;
   max-width: 984px;
@@ -15,8 +16,9 @@
     "image article"
     "button article";
 }
+
 .place:first-of-type {
-  padding-top: 92px;
+  padding-top: 0;
 }
 .place:last-of-type {
   padding-bottom: 92px;
@@ -27,7 +29,8 @@
   font-size: 72px;
   line-height: 1.06;
   grid-area: title;
-  max-width: 480px;
+  max-width: 100%;
+  height: auto;
   text-align: left;
 }
 
@@ -53,8 +56,10 @@
   padding: 0;
 }
 .place__image {
-  max-width: 460px;
-  max-height: 460px;
+  /*max-width: 460px;
+  max-height: 460px;*/
+  max-width: 100%;
+  height: auto;
   grid-area: image;
 }
 
@@ -76,7 +81,7 @@
   border-radius: 4px;
   background: #2f80ed;
   color: #fff;
-  min-width: 248px;
+  /*min-width: 248px;*/
   max-width: 288px;
   height: 48px;
   max-height: 48px;
@@ -89,15 +94,30 @@
 .place__button:hover {
   background-color: #0063d2;
 }
-
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 769px) {
   .places {
-    max-width: 320;
+    /*max-width: 768px;*/
+    font-size: 16px;
   }
   .place {
+    padding: 72px 24px 0 24px;
+    grid-template-columns: 2fr 1fr;
+  }
+  .place__title {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+  .place__image {
     max-width: 100%;
-    grid-template-columns: auto;
-    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .place {
+    padding: inherit 0;
+    max-width: 100%;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
     grid-template-areas:
       "title"
       "artist"
@@ -105,14 +125,34 @@
       "article"
       "button";
   }
-  .place__paragraph {
-    max-width: 288px;
-  }
 }
-
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 321px) {
   .places {
-    max-width: 768px;
+    max-width: 320px;
+    padding: 0;
+  }
+  /* .place {
+    padding: inherit 0;
+    max-width: 100%;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "article"
+      "button";
+  }*/
+  .place__paragraph {
+    padding: inherit 16px;
     font-size: 16px;
+  }
+
+  .place__title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
+  .place__image {
+    max-width: 100%;
   }
 }
