@@ -1,8 +1,6 @@
 .photo-grid {
   display: grid;
   grid-gap: 16px;
-  max-width: 1184px;
-  /*max-height: 442px;*/
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   margin: auto;
   padding: 0 28px;
@@ -18,12 +16,7 @@
     max-width: 768px;
     grid-gap: 12px;
     grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
-    /*grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));*/
     margin: auto;
-  }
-  .photo-grid__item {
-    /*max-width: 332px;*/
-    /*  max-height: 264px;*/
   }
 }
 
