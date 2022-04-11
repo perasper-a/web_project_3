@@ -14,6 +14,7 @@
   color: #fff;
 }
 .cover::before {
+  content: "";
   width: 100%;
   height: 100%;
   background-color: #2a2c2f;
@@ -28,6 +29,14 @@
   opacity: 0.8;
 }
 
+
+.cover__content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  z-index: 1;
+}
+
 .cover__title {
   font-weight: bold;
   font-size: 72px;
@@ -35,13 +44,6 @@
   margin: auto;
   text-align: center;
   z-index: 2;
-}
-
-.cover__content {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  z-index: 1;
 }
 .cover__paragraph {
   line-height: 1.22;
@@ -78,13 +80,13 @@
 @media screen and (max-width: 769px) {
   .cover {
     max-width: 768px;
-    max-height: 746px;
+    min-height: 746px;
   }
 }
 @media screen and (max-width: 321px) {
   .cover {
     max-width: 320px;
-    max-height: 254px;
+    min-height: 254px;
   }
   .cover__title {
     padding-left: 56px;

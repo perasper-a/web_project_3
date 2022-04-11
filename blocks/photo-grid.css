@@ -5,6 +5,7 @@
   margin: auto;
   padding: 0 28px;
   max-width: 100%;
+  align-content: center;
 }
 
 .photo-grid__item {
