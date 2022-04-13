@@ -11,11 +11,10 @@
   line-height: 1.04;
   margin: 0 auto;
   font-weight: bold;
-  padding: 91px 244px 32px 243px;
+  padding: 91px 244px 0 243px;
 }
 
 .lead__subtitle {
-  min-height: 40px;
   font-size: 30px;
   line-height: 1.2;
   margin: 0 auto;
@@ -88,6 +87,7 @@
 @media screen and (max-width: 333px) {
   .lead__subtitle {
     font-size: 19px;
+    padding-top: 20px;
   }
 }
 @media screen and (max-width: 321px) {
@@ -99,8 +99,7 @@
     line-height: 1.1;
   }
   .lead__subtitle {
-    max-width: 288px;
-    max-height: 40px;
+    padding-top: 16px;
     font-size: 16px;
     line-height: 1.25;
   }

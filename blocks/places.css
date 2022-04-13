@@ -31,7 +31,7 @@
   grid-area: title;
   max-width: 100%;
   height: auto;
-  text-align: left;
+  text-align: bottom;
 }
 
 .place__website {
@@ -81,8 +81,7 @@
   border-radius: 4px;
   background: #2f80ed;
   color: #fff;
-  /*min-width: 248px;*/
-  max-width: 288px;
+  max-width: 248px;
   height: 48px;
   max-height: 48px;
   padding: 0;
@@ -131,9 +130,8 @@
     max-width: 320px;
     padding: 0;
   }
-  /* .place {
+  .place {
     padding: inherit 0;
-    max-width: 100%;
     grid-template-rows: auto;
     grid-template-columns: 100%;
     grid-template-areas:
@@ -142,7 +140,7 @@
       "image"
       "article"
       "button";
-  }*/
+  }
   .place__paragraph {
     padding: inherit 16px;
     font-size: 16px;
@@ -154,5 +152,9 @@
   }
   .place__image {
     max-width: 100%;
+    padding:0;
+  }
+  .place__button{
+    max-width: 288pxcf;
   }
 }

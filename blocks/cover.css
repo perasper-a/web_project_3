@@ -2,14 +2,15 @@
   background-image: url(../images/background.png);
   background-size: cover;
   background-position: center;
-  max-width: 100%;
+  max-width: 1184px;
   background-repeat: no-repeat;
   padding-top: 92px;
   min-height: 740px;
+  height: auto;
   display: flex;
   justify-content: center;
   z-index: 0;
-  margin: 0;
+  margin:auto;
   position: relative;
   color: #fff;
 }
@@ -28,7 +29,6 @@
 .cover:hover:before {
   opacity: 0.8;
 }
-
 
 .cover__content {
   display: flex;
@@ -54,39 +54,59 @@
   z-index: 2;
 }
 .cover__button {
-  background-color: #0278fe;
-  display: flex;
-  justify-content: center;
-  align-content: center;
+  /*background-color: #0278fe;
   border-radius: 4px;
-  text-align: center;
-  margin: auto;
+  align-self: center;
+  display: block;
   border: none;
   min-width: 137px;
   color: #ffffff;
-  height: 48px;
+  height: min-content;
   min-height: 48px;
   font-weight: 600;
   font-size: 18px;
+  line-height: 22px;
   text-decoration: none;
   max-width: 137px;
+  transition: background-color 0.5s ease;*/
+  display: flex;
+ align-self: center;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 4px;
+  background: #2f80ed;
+  color: #fff;
+  width:54%;
+  max-width: 137px;
+  height: 48px;
+  max-height: 48px;
+  padding: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
   transition: background-color 0.5s ease;
 }
 
 .cover__button:hover {
   background-color: #0063d2;
 }
-
-@media screen and (max-width: 769px) {
-  .cover {
-    max-width: 768px;
-    min-height: 746px;
+@media screen and (max-width: 1184px) {
+  .cover{
+    max-width: 98% ;
   }
 }
+
+@media screen and (max-width: 1004px) {
+  .cover{
+    max-width: 100% ;
+  }
+}
+
 @media screen and (max-width: 321px) {
   .cover {
     max-width: 320px;
-    min-height: 254px;
+    /*min-height: 254px;*/
   }
   .cover__title {
     padding-left: 56px;
