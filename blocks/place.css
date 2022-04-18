@@ -2,7 +2,7 @@
   display: grid;
   gap: 48px 40px;
   grid-template-rows: auto auto 1fr;
-  grid-template-columns: 460px 1fr;
+  grid-template-columns: 50% 1fr;
   padding: 80px 148px 0 148px;
   max-width: 984px;
   grid-template-areas:
@@ -10,8 +10,6 @@
     "image article"
     "button article";
 }
-
-
 
 .place:first-of-type {
   padding-top: 0;
@@ -44,16 +42,18 @@
   line-height: 15px;
   letter-spacing: 0.12em;
   padding-bottom: 8px;
+  text-transform: uppercase;
 }
 
 .place__artist {
   margin: 0;
   list-style: none;
   padding: 0;
+  font-size: 18px;
+  line-height: 1.22;
+  font-weight: 400;
 }
 .place__image {
-  /*max-width: 460px;
-  max-height: 460px;*/
   max-width: 100%;
   height: auto;
   grid-area: image;
@@ -67,7 +67,7 @@
   padding-bottom: 25px;
 }
 .place__paragraph:last-of-type {
-  padding: 0;
+  padding-bottom: 0;
 }
 .place__button {
   display: flex;
@@ -77,12 +77,11 @@
   border-radius: 4px;
   background: #2f80ed;
   color: #fff;
-  /*min-width: 248px;*/
   max-width: 288px;
   height: 48px;
   max-height: 48px;
   padding: 0;
-  font-weight: 500;
+  font-weight: 600;
   transition: background-color 0.5s ease;
   grid-area: button;
 }
@@ -91,94 +90,102 @@
   background-color: #0063d2;
 }
 
-  @media screen and (max-width: 850px) {
-    .place{
-      padding:inherit 100px;
-    }
+@media screen and (max-width: 915px) {
+  .place {
+    padding: inherit 120px;
   }
-  @media screen and (max-width: 769px) {
-    .place {
-      padding: 72px 24px 0 24px;
-      grid-template-columns: 2fr 1fr;
-    }
-    .place__title {
-      font-size: 42px;
-      line-height: 1.1;
-    }
-    .place__image {
-      max-width: 100%;
-    }
+}
+@media screen and (max-width: 850px) {
+  .place {
+    padding: inherit 100px;
   }
+}
 
-  @media screen and (max-width: 650px) {
-    place {
-      grid-template-columns:240px 1fr;
-    }
-    .place__image {
-      max-width: 300px ;
-      margin:auto;
-    }
-  }
-
-  @media screen and (max-width: 400px) {
-    .place {
-      padding: inherit 0;
-      max-width: 100%;
-      grid-template-rows: auto;
-      grid-template-columns: 100%;
-      grid-template-areas:
-        "title"
-        "artist"
-        "image"
-        "article"
-        "button";
-    }
-    .place__title {
-      padding-left :16px ;
-      padding-right :16px ;
-    }
-    .place__url-heading {
-      padding-left :16px ;
-      padding-right :16px ;
-    }
-    .place__artist {
-      padding-left :16px ;
-      padding-right :16px ;
-    }
-    .place__paragraph {
-      padding-left :16px ;
-      padding-right :16px ;
-    }
+@media screen and (max-width: 769px) {
+  .place {
+    padding: 72px 24px 0 24px;
 
   }
-  @media screen and (max-width: 321px) {
+  .place__title {
+    font-size: 42px;
+    line-height: 1.1;
+  }
+  .place__image {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .place {
+    grid-template-columns:50% 1fr; 
+  }
+  .place__image {
     
-    .place {
-      grid-template-rows: auto;
-      grid-template-columns: 100%;
-      grid-template-areas:
-        "title"
-        "artist"
-        "image"
-        "article"
-        "button";
-    }
-
-    .place__paragraph {
-      padding: inherit 16px;
-      font-size: 16px;
-    }
-  
-    .place__title {
-      font-size: 32px;
-      line-height: 1.09;
-    }
-    .place__image {
-      max-width: 100%;
-      padding:0;
-    }
-    .place__button{
-      max-width: 288px;
-    }
+    margin: auto;
   }
-  
+}
+
+@media screen and (max-width: 400px) {
+  .place {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 100%;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "article"
+      "button";
+  }
+  .place__title {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .place__url-heading {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .place__artist {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .place__paragraph {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+}
+
+@media screen and (max-width: 321px) {
+  .place {
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "title"
+      "artist"
+      "image"
+      "article"
+      "button";
+  }
+
+  .place__paragraph {
+    padding: inherit 16px;
+    font-size: 16px;
+  }
+
+  .place__title {
+    font-size: 32px;
+    line-height: 1.09;
+  }
+
+  .place__image {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .place__button {
+    max-width: 288px;
+  }
+}
