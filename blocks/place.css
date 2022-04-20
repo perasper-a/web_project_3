@@ -2,7 +2,8 @@
   display: grid;
   gap: 48px 40px;
   grid-template-rows: auto auto 1fr;
-  grid-template-columns: 50% 1fr;
+  grid-template-columns: 1fr 1fr;
+  margin:0 auto;
   padding: 80px 148px 0 148px;
   max-width: 984px;
   grid-template-areas:
@@ -18,7 +19,7 @@
   padding-bottom: 92px;
 }
 .place__title {
-  margin: 0;
+  margin: 0 auto;
   font-weight: bold;
   font-size: 72px;
   line-height: 1.06;
@@ -77,7 +78,7 @@
   border-radius: 4px;
   background: #2f80ed;
   color: #fff;
-  max-width: 288px;
+  max-width: 248px;
   height: 48px;
   max-height: 48px;
   padding: 0;
@@ -104,7 +105,6 @@
 @media screen and (max-width: 769px) {
   .place {
     padding: 72px 24px 0 24px;
-
   }
   .place__title {
     font-size: 42px;
@@ -112,6 +112,9 @@
   }
   .place__image {
     max-width: 100%;
+  }
+  .place__paragraph{
+    line-height: 26px;
   }
 }
 
@@ -155,7 +158,13 @@
     padding-left: 16px;
     padding-right: 16px;
   }
-
+  .place__button{
+   align-self: center;
+    max-width: 100%;
+    margin-left: 16px;
+    margin-right: 16px;
+    
+  }
 }
 
 @media screen and (max-width: 321px) {

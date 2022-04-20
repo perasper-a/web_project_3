@@ -2,6 +2,7 @@
   color: #fff;
   /*max-height: 490px;*/
   padding: 0 347px 118px 148px;
+  max-width:785px;
 }
 
 .intro__title {
@@ -33,10 +34,15 @@
   font-size: 16px;
   line-height: 26px;
   margin: 0;
+  padding-right: 65px;
+ /* max-width: 720px;*/
 }
 @media screen and (max-width: 1082px) {
   .intro {
     padding-right: 200px;
+  }
+  .intro__text {
+    padding-right: 40px;
   }
 }
 
@@ -50,6 +56,9 @@
   .intro {
     padding: 0 24px 90px 24px;
   }
+  .intro__text {
+    padding-right: 0;
+}
 }
 
 @media screen and (max-width: 321px) {

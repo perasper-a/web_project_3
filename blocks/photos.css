@@ -1,0 +1,17 @@
+.photos { 
+    padding:0 48px; 
+    align-content: center;
+  } 
+
+  @media screen and (max-width:769px) {
+    .photos{
+      padding-right:24px;
+      padding-left: 24px ;
+    }
+  }
+@media screen and (max-width: 380px) {
+    .photos{
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }

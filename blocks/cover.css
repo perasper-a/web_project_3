@@ -4,8 +4,8 @@
   background-position: center;
   max-width: 1184px;
   background-repeat: no-repeat;
-  padding-top: 92px;
-  min-height: 740px;
+  height: 740px !important;
+  max-height: 740px;
   height: auto;
   display: flex;
   justify-content: center;
@@ -54,21 +54,6 @@
   z-index: 2;
 }
 .cover__button {
-  /*background-color: #0278fe;
-  border-radius: 4px;
-  align-self: center;
-  display: block;
-  border: none;
-  min-width: 137px;
-  color: #ffffff;
-  height: min-content;
-  min-height: 48px;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-  text-decoration: none;
-  max-width: 137px;
-  transition: background-color 0.5s ease;*/
   display: flex;
   align-self: center;
   justify-content: center;
@@ -101,12 +86,18 @@
   .cover {
     max-width: 100%;
   }
+  
+}
+@media screen and (max-width: 769px) {
+  .cover {
+    min-height: 746px !important;
+  }
 }
 
 @media screen and (max-width: 321px) {
   .cover {
     max-width: 320px;
-    /*min-height: 254px;*/
+    min-height: 254px;
   }
   .cover__title {
     padding-left: 56px;
