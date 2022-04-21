@@ -3,3 +3,10 @@
   display: flex;
   margin: auto;
 }
+
+@media screen and (max-width: 321px) {
+  .logo {
+    max-width: 200px;
+    padding-top: 20px;
+  }
+}

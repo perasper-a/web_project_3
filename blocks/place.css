@@ -3,7 +3,7 @@
   gap: 48px 40px;
   grid-template-rows: auto auto 1fr;
   grid-template-columns: 1fr 1fr;
-  margin:0 auto;
+  margin: 0 auto;
   padding: 80px 148px 0 148px;
   max-width: 984px;
   grid-template-areas:
@@ -113,17 +113,16 @@
   .place__image {
     max-width: 100%;
   }
-  .place__paragraph{
+  .place__paragraph {
     line-height: 26px;
   }
 }
 
 @media screen and (max-width: 650px) {
   .place {
-    grid-template-columns:50% 1fr; 
+    grid-template-columns: 50% 1fr;
   }
   .place__image {
-    
     margin: auto;
   }
 }
@@ -143,8 +142,11 @@
       "button";
   }
   .place__title {
+    display: flex;
     padding-left: 16px;
     padding-right: 16px;
+    max-height: 288px;
+    justify-content: left;
   }
   .place__url-heading {
     padding-left: 16px;
@@ -158,12 +160,11 @@
     padding-left: 16px;
     padding-right: 16px;
   }
-  .place__button{
-   align-self: center;
+  .place__button {
+    align-self: center;
     max-width: 100%;
     margin-left: 16px;
     margin-right: 16px;
-    
   }
 }
 
