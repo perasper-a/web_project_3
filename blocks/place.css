@@ -5,6 +5,7 @@
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
   padding: 80px 148px 0 148px;
+  margin: auto;
   max-width: 984px;
   grid-template-areas:
     "title artist"
@@ -19,7 +20,8 @@
   padding-bottom: 92px;
 }
 .place__title {
-  margin: 0 auto;
+  display: grid;
+  margin: 0;
   font-weight: bold;
   font-size: 72px;
   line-height: 1.06;
@@ -27,6 +29,7 @@
   max-width: 100%;
   height: auto;
   text-align: left;
+  align-items: end;
 }
 
 .place__website {
@@ -85,6 +88,8 @@
   font-weight: 600;
   transition: background-color 0.5s ease;
   grid-area: button;
+  font-weight: 600;
+  line-height: 22px;
 }
 
 .place__button:hover {
@@ -93,17 +98,26 @@
 
 @media screen and (max-width: 915px) {
   .place {
-    padding: inherit 120px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .place__title {
+    font-size: 60px;
   }
 }
 @media screen and (max-width: 850px) {
   .place {
-    padding: inherit 100px;
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+  .place__title {
+    font-size: 56px;
   }
 }
 
 @media screen and (max-width: 769px) {
   .place {
+    gap: 28px;
     padding: 72px 24px 0 24px;
   }
   .place__title {
@@ -172,6 +186,7 @@
   .place {
     grid-template-rows: auto;
     grid-template-columns: 100%;
+    row-gap: 30px;
     grid-template-areas:
       "title"
       "artist"
@@ -197,5 +212,8 @@
 
   .place__button {
     max-width: 288px;
+  }
+  .place:last-of-type {
+    padding-bottom: 64px;
   }
 }
