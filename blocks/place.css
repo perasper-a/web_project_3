@@ -3,7 +3,6 @@
   gap: 48px 40px;
   grid-template-rows: auto auto 1fr;
   grid-template-columns: 1fr 1fr;
-  margin: 0 auto;
   padding: 80px 148px 0 148px;
   margin: auto;
   max-width: 984px;
@@ -85,7 +84,6 @@
   height: 48px;
   max-height: 48px;
   padding: 0;
-  font-weight: 600;
   transition: background-color 0.5s ease;
   grid-area: button;
   font-weight: 600;
