@@ -61,6 +61,7 @@
   .lead__subtitle {
     padding-left: 24px;
     padding-right: 24px;
+    padding-bottom: 36px;
   }
   .lead__image {
     max-width: 100%;
@@ -102,13 +103,13 @@
     font-size: 40px;
     line-height: 1.1;
     padding-left: 16px;
-    padding-right:16px ;
+    padding-right: 16px;
   }
   .lead__subtitle {
     padding-top: 16px;
     font-size: 16px;
     padding-left: 16px;
-    padding-right:16px ;
+    padding-right: 16px;
     line-height: 1.25;
   }
   .lead__image {
