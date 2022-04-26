@@ -103,13 +103,21 @@
     font-size: 40px;
     line-height: 1.1;
     padding-left: 16px;
+<<<<<<< HEAD
     padding-right: 16px;
+=======
+    padding-right:16px;
+>>>>>>> 928a5c0002fcf1b04e2df3dea2e57e06bd954ee3
   }
   .lead__subtitle {
     padding-top: 16px;
     font-size: 16px;
     padding-left: 16px;
+<<<<<<< HEAD
     padding-right: 16px;
+=======
+    padding-right:16px;
+>>>>>>> 928a5c0002fcf1b04e2df3dea2e57e06bd954ee3
     line-height: 1.25;
   }
   .lead__image {
